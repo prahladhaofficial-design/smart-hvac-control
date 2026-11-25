@@ -1,0 +1,54 @@
+simulating PI thermostat (fixed setpoint) ...
+simulating PPO reinforcement-learning agent ...
+simulating MPC realistic (wrong model + noisy forecast + Kalman filter) ...
+simulating MPC (perfect model + forecasts, upper bound) ...
+{
+  "test_period": "2017-06-01 to 2017-09-30 (15-minute steps, real outdoor temperature, site 'Fox')",
+  "controllers": {
+    "PI thermostat (fixed setpoint)": {
+      "energy_kwh": 13326.35,
+      "cost": 2182.73,
+      "peak_period_kwh": 5075.57,
+      "max_demand_kw": 16.48,
+      "occupied_discomfort_degC_h": 0.0,
+      "pct_occupied_time_outside_band": 0.0,
+      "cost_saving_vs_thermostat_pct": 0.0,
+      "energy_saving_vs_thermostat_pct": 0.0,
+      "peak_period_energy_cut_pct": 0.0
+    },
+    "PPO reinforcement-learning agent": {
+      "energy_kwh": 13387.4,
+      "cost": 2161.57,
+      "peak_period_kwh": 4957.18,
+      "max_demand_kw": 18.43,
+      "occupied_discomfort_degC_h": 0.0,
+      "pct_occupied_time_outside_band": 0.0,
+      "cost_saving_vs_thermostat_pct": 0.97,
+      "energy_saving_vs_thermostat_pct": -0.46,
+      "peak_period_energy_cut_pct": 2.33
+    },
+    "MPC realistic (wrong model + noisy forecast + Kalman filter)": {
+      "energy_kwh": 13054.37,
+      "cost": 1994.71,
+      "peak_period_kwh": 4319.82,
+      "max_demand_kw": 16.94,
+      "occupied_discomfort_degC_h": 0.0,
+      "pct_occupied_time_outside_band": 0.0,
+      "cost_saving_vs_thermostat_pct": 8.61,
+      "energy_saving_vs_thermostat_pct": 2.04,
+      "peak_period_energy_cut_pct": 14.89
+    },
+    "MPC (perfect model + forecasts, upper bound)": {
+      "energy_kwh": 12937.49,
+      "cost": 1823.93,
+      "peak_period_kwh": 3586.05,
+      "max_demand_kw": 16.43,
+      "occupied_discomfort_degC_h": 0.0,
+      "pct_occupied_time_outside_band": 0.0,
+      "cost_saving_vs_thermostat_pct": 16.44,
+      "energy_saving_vs_thermostat_pct": 2.92,
+      "peak_period_energy_cut_pct": 29.35
+    }
+  },
+  "ppo_share_of_mpc_cost_saving_pct": 5.9
+}

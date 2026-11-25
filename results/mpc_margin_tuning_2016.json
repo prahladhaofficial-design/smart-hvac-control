@@ -1,0 +1,32 @@
+[
+  {
+    "margin_c": 0.0,
+    "cost_saving_pct": 12.8,
+    "occupied_discomfort_degC_h": 25.76,
+    "pct_occupied_time_outside_band": 26.02
+  },
+  {
+    "margin_c": 0.25,
+    "cost_saving_pct": 11.8,
+    "occupied_discomfort_degC_h": 7.72,
+    "pct_occupied_time_outside_band": 5.91
+  },
+  {
+    "margin_c": 0.5,
+    "cost_saving_pct": 10.8,
+    "occupied_discomfort_degC_h": 2.5,
+    "pct_occupied_time_outside_band": 2.67
+  },
+  {
+    "margin_c": 0.75,
+    "cost_saving_pct": 9.7,
+    "occupied_discomfort_degC_h": 0.41,
+    "pct_occupied_time_outside_band": 0.57
+  },
+  {
+    "margin_c": 1.0,
+    "cost_saving_pct": 8.6,
+    "occupied_discomfort_degC_h": 0.0,
+    "pct_occupied_time_outside_band": 0.0
+  }
+]

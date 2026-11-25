@@ -1,0 +1,5 @@
+,energy_kwh,cost,peak_period_kwh,max_demand_kw,occupied_discomfort_degC_h,pct_occupied_time_outside_band,cost_saving_vs_thermostat_pct,energy_saving_vs_thermostat_pct,peak_period_energy_cut_pct
+PI thermostat (fixed setpoint),13326.35,2182.73,5075.57,16.48,0.0,0.0,0.0,0.0,0.0
+PPO reinforcement-learning agent,13387.4,2161.57,4957.18,18.43,0.0,0.0,0.97,-0.46,2.33
+MPC realistic (wrong model + noisy forecast + Kalman filter),13054.37,1994.71,4319.82,16.94,0.0,0.0,8.61,2.04,14.89
+"MPC (perfect model + forecasts, upper bound)",12937.49,1823.93,3586.05,16.43,0.0,0.0,16.44,2.92,29.35
